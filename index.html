@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Dev</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body id="body">
+    <header>
+        <a href="#" id="logo">
+            <img src="assets/logo.svg" alt="">
+        </a>
+        <button id="mode">
+            <img id="toggle-img" src="assets/dark.svg" alt="">
+        </button>
+    </header>
+    <main>
+        <h1>FRONT END WEB DEVELOPMENT TECHNOLOGIES & LANGUAGUES</h1>
+        <section id="box-container">
+            <div class="box">
+                <div class="image-box">
+                    <img src="assets/html.png" alt="">
+                </div>
+                <div class="details">
+                    <h3>HTML</h3>
+                    <p>Hypertext Markup Language is the language used in structuring the a web page. </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-box">
+                    <img src="assets/css.png" alt="">
+                </div>
+                <div class="details">
+                    <h3>CSS</h3>
+                    <p>Hypertext Markup Language is the language used in structuring the a web page. </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-box">
+                    <img src="assets/js.png" alt="">
+                </div>
+                <div class="details">
+                    <h3>JAVASCRIPT</h3>
+                    <p>Hypertext Markup Language is the language used in structuring the a web page. </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-box">
+                    <img src="assets/vue.png" alt="">
+                </div>
+                <div class="details">
+                    <h3>VUE.JS</h3>
+                    <p>Hypertext Markup Language is the language used in structuring the a web page. </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-box">
+                    <img src="assets/react.png" alt="">
+                </div>
+                <div class="details">
+                    <h3>REACT.JS</h3>
+                    <p>Hypertext Markup Language is the language used in structuring the a web page. </p>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+</body>
+<script defer>
+    const btn = document.getElementById('mode')
+    const toggleImg = document.getElementById('toggle-img')
+    const body = document.getElementById('body')
+
+    btn.addEventListener('click', ()=>{
+        body.classList.toggle("dark")
+        if(body.classList.contains("dark")){
+            toggleImg.src = "assets/light.svg"
+        }else{
+            toggleImg.src = "assets/dark.svg"
+        }
+
+        // body.classList.contains("dark") ? 
+        // toggleImg.src = "assets/light.svg" : 
+        // toggleImg.src = "assets/dark.svg"
+    })
+</script>
+</html>
